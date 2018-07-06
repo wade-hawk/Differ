@@ -215,8 +215,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C9EE871E1CCFCA83006BD90E /* Build configuration list for PBXNativeTarget "Differ" */;
 			buildPhases = (
-				C9EE87111CCFCA83006BD90E /* Sources */,
 				900E03A31DE7C6C30033A799 /* Headers */,
+				C9EE87111CCFCA83006BD90E /* Sources */,
 			);
 			buildRules = (
 			);
@@ -334,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 900E03AF1DE7F1E80033A799 /* Deployment-Targets.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -361,6 +362,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 900E03AF1DE7F1E80033A799 /* Deployment-Targets.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
