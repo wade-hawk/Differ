@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Collection Extension Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Extension/Collection" class="dashAnchor"></a>
+    <a title="Collection Extension Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Differ Docs</a> (64% documented)</p>
+        <p class="header-right"><a href="https://github.com/tonyarnold/Differ"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Differ Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Collection Extension Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/ExtendedPatch.html">ExtendedPatch</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/Patch.html">Patch</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/BatchUpdate.html">BatchUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Collection.html">Collection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSCollectionView.html">NSCollectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/NSTableView.html">NSTableView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/RangeReplaceableCollection.html">RangeReplaceableCollection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UICollectionView.html">UICollectionView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UITableView.html">UITableView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6Differ13extendedPatch4from2to4sortSayAA08ExtendedC0Oy7ElementQzGGx_xSbAA0G4DiffVAHO_ANtcSgtSlRzSQAIRQlF">extendedPatch(from:to:sort:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6Differ5patch4from2toSayAA5PatchOy7ElementQzGGx_xtSlRzSQAHRQlF">patch(from:to:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:6Differ5patch4from2to4sortSayAA5PatchOy7ElementQzGGx_xSbAA4DiffVAHO_ANtXEtSlRzSQAIRQlF">patch(from:to:sort:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DiffProtocol.html">DiffProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/BatchUpdate.html">BatchUpdate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/BatchUpdate/MoveStep.html">– MoveStep</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Diff.html">Diff</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Diff/Element.html">– Element</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ExtendedDiff.html">ExtendedDiff</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ExtendedDiff/Element.html">– Element</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NestedDiff.html">NestedDiff</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NestedDiff/Element.html">– Element</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NestedExtendedDiff.html">NestedExtendedDiff</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/NestedExtendedDiff/Element.html">– Element</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Point.html">Point</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Trace.html">Trace</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/DiffRowAnimation">DiffRowAnimation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:6Differ15EqualityCheckera">EqualityChecker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:6Differ28NestedElementEqualityCheckera">NestedElementEqualityChecker</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Collection</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">Collection</span> <span class="p">:</span> <span class="kt">Sequence</span> <span class="k">where</span> <span class="k">Self</span><span class="o">.</span><span class="kt">SubSequence</span> <span class="p">:</span> <span class="kt">Collection</span></code></pre>
+
+                </div>
+              </div>
+            
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sl6DifferE4diff_7isEqualAA4DiffVx_Sb7ElementQz_AGtXEtF"></a>
+                    <a name="//apple_ref/swift/Method/diff(_:isEqual:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sl6DifferE4diff_7isEqualAA4DiffVx_Sb7ElementQz_AGtXEtF">diff(_:isEqual:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a diff between the calee and <code>other</code> collection</p>
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    <p>O((N+M)*D)</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">diff</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">other</span><span class="p">:</span> <span class="k">Self</span><span class="p">,</span>
+    <span class="nv">isEqual</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:6Differ15EqualityCheckera">EqualityChecker</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Diff.html">Diff</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a collection to compare the calee to</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a Diff between the calee and <code>other</code> collection</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sl6DifferE10diffTraces2to7isEqualSayAA5TraceVGx_Sb7ElementQz_AItXEtF"></a>
+                    <a name="//apple_ref/swift/Method/diffTraces(to:isEqual:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sl6DifferE10diffTraces2to7isEqualSayAA5TraceVGx_Sb7ElementQz_AItXEtF">diffTraces(to:isEqual:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Generates all traces required to create an output diff. See the <a href="http://www.xmailserver.org/diff2.pdf">paper</a> for more information on traces.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">diffTraces</span><span class="p">(</span>
+    <span class="nv">to</span><span class="p">:</span> <span class="k">Self</span><span class="p">,</span>
+    <span class="nv">isEqual</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:6Differ15EqualityCheckera">EqualityChecker</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/Trace.html">Trace</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>to</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>other collection</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>all traces required to create an output diff</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sl6DifferE20outputDiffPathTraces2to7isEqualSayAA5TraceVGx_Sb7ElementQz_AItXEtF"></a>
+                    <a name="//apple_ref/swift/Method/outputDiffPathTraces(to:isEqual:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sl6DifferE20outputDiffPathTraces2to7isEqualSayAA5TraceVGx_Sb7ElementQz_AItXEtF">outputDiffPathTraces(to:isEqual:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns the traces which mark the shortest diff path.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">outputDiffPathTraces</span><span class="p">(</span>
+    <span class="nv">to</span><span class="p">:</span> <span class="k">Self</span><span class="p">,</span>
+    <span class="nv">isEqual</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:6Differ15EqualityCheckera">EqualityChecker</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/Trace.html">Trace</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sl6DifferSQ7ElementRpzrlE4diffyAA4DiffVxF"></a>
+                    <a name="//apple_ref/swift/Method/diff(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sl6DifferSQ7ElementRpzrlE4diffyAA4DiffVxF">diff(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Extensions/Collection.html#/s:Sl6DifferE4diff_7isEqualAA4DiffVx_Sb7ElementQz_AGtXEtF">diff(_:isEqual:)</a></code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">diff</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">other</span><span class="p">:</span> <span class="k">Self</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/Diff.html">Diff</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sl6DifferSQ7ElementRpzrlE10diffTraces2toSayAA5TraceVGx_tF"></a>
+                    <a name="//apple_ref/swift/Method/diffTraces(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sl6DifferSQ7ElementRpzrlE10diffTraces2toSayAA5TraceVGx_tF">diffTraces(to:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Extensions/Collection.html#/s:Sl6DifferE10diffTraces2to7isEqualSayAA5TraceVGx_Sb7ElementQz_AItXEtF">diffTraces(to:isEqual:)</a></code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">diffTraces</span><span class="p">(</span>
+    <span class="nv">to</span><span class="p">:</span> <span class="k">Self</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/Trace.html">Trace</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sl6DifferSQ7ElementRpzrlE20outputDiffPathTraces2toSayAA5TraceVGx_tF"></a>
+                    <a name="//apple_ref/swift/Method/outputDiffPathTraces(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sl6DifferSQ7ElementRpzrlE20outputDiffPathTraces2toSayAA5TraceVGx_tF">outputDiffPathTraces(to:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Extensions/Collection.html#/s:Sl6DifferE20outputDiffPathTraces2to7isEqualSayAA5TraceVGx_Sb7ElementQz_AItXEtF">outputDiffPathTraces(to:isEqual:)</a></code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">outputDiffPathTraces</span><span class="p">(</span>
+    <span class="nv">to</span><span class="p">:</span> <span class="k">Self</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt"><a href="../Structs/Trace.html">Trace</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sl6DifferE12extendedDiff_7isEqualAA08ExtendedC0Vx_Sb7ElementQz_AGtXEtF"></a>
+                    <a name="//apple_ref/swift/Method/extendedDiff(_:isEqual:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sl6DifferE12extendedDiff_7isEqualAA08ExtendedC0Vx_Sb7ElementQz_AGtXEtF">extendedDiff(_:isEqual:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an extended diff between the callee and <code>other</code> collection</p>
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    <p>O((N+M)*D). There&rsquo;s additional cost of O(D^2) to compute the moves.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">extendedDiff</span><span class="p">(</span><span class="n">_</span> <span class="nv">other</span><span class="p">:</span> <span class="k">Self</span><span class="p">,</span> <span class="nv">isEqual</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:6Differ15EqualityCheckera">EqualityChecker</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/ExtendedDiff.html">ExtendedDiff</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a collection to compare the callee to</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isEqual</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>instance comparator closure</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>ExtendedDiff between the callee and <code>other</code> collection</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sl6DifferE12extendedDiff4from5other7isEqualAA08ExtendedC0VAA0C0V_xSb7ElementQz_AKtXEtF"></a>
+                    <a name="//apple_ref/swift/Method/extendedDiff(from:other:isEqual:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sl6DifferE12extendedDiff4from5other7isEqualAA08ExtendedC0VAA0C0V_xSb7ElementQz_AKtXEtF">extendedDiff(from:other:isEqual:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates an extended diff between the callee and <code>other</code> collection</p>
+<div class="aside aside-complexity">
+    <p class="aside-title">Complexity</p>
+    <p>O(D^2). where D is number of elements in diff.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">extendedDiff</span><span class="p">(</span><span class="n">from</span> <span class="nv">diff</span><span class="p">:</span> <span class="kt"><a href="../Structs/Diff.html">Diff</a></span><span class="p">,</span> <span class="nv">other</span><span class="p">:</span> <span class="k">Self</span><span class="p">,</span> <span class="nv">isEqual</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:6Differ15EqualityCheckera">EqualityChecker</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/ExtendedDiff.html">ExtendedDiff</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>diff</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>source diff</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a collection to compare the callee to</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isEqual</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>instance comparator closure</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>ExtendedDiff between the callee and <code>other</code> collection</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sl6DifferE10firstMatch_12dirtyIndices9candidate0F5Index5other7isEqualAA12ExtendedDiffV7ElementO_SitSgAA0L0V_ShySiGAnJOSixSbAJQz_AQtXEtF"></a>
+                    <a name="//apple_ref/swift/Method/firstMatch(_:dirtyIndices:candidate:candidateIndex:other:isEqual:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sl6DifferE10firstMatch_12dirtyIndices9candidate0F5Index5other7isEqualAA12ExtendedDiffV7ElementO_SitSgAA0L0V_ShySiGAnJOSixSbAJQz_AQtXEtF">firstMatch(_:dirtyIndices:candidate:candidateIndex:other:isEqual:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">firstMatch</span><span class="p">(</span>
+    <span class="n">_</span> <span class="nv">diff</span><span class="p">:</span> <span class="kt"><a href="../Structs/Diff.html">Diff</a></span><span class="p">,</span>
+    <span class="nv">dirtyIndices</span><span class="p">:</span> <span class="kt">Set</span><span class="o">&lt;</span><span class="kt"><a href="../Structs/Diff.html">Diff</a></span><span class="o">.</span><span class="kt">Index</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="nv">candidate</span><span class="p">:</span> <span class="kt"><a href="../Structs/Diff.html">Diff</a></span><span class="o">.</span><span class="kt">Element</span><span class="p">,</span>
+    <span class="nv">candidateIndex</span><span class="p">:</span> <span class="kt"><a href="../Structs/Diff.html">Diff</a></span><span class="o">.</span><span class="kt">Index</span><span class="p">,</span>
+    <span class="nv">other</span><span class="p">:</span> <span class="k">Self</span><span class="p">,</span>
+    <span class="nv">isEqual</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:6Differ15EqualityCheckera">EqualityChecker</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt"><a href="../Structs/ExtendedDiff.html">ExtendedDiff</a></span><span class="o">.</span><span class="kt">Element</span><span class="p">,</span> <span class="kt"><a href="../Structs/Diff.html">Diff</a></span><span class="o">.</span><span class="kt">Index</span><span class="p">)?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sl6DifferE11createMatch_5match5other7isEqualAA12ExtendedDiffV7ElementOSgAA0I0VAHO_AMxSbAHQz_ANtXEtF"></a>
+                    <a name="//apple_ref/swift/Method/createMatch(_:match:other:isEqual:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sl6DifferE11createMatch_5match5other7isEqualAA12ExtendedDiffV7ElementOSgAA0I0VAHO_AMxSbAHQz_ANtXEtF">createMatch(_:match:other:isEqual:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">createMatch</span><span class="p">(</span><span class="n">_</span> <span class="nv">candidate</span><span class="p">:</span> <span class="kt"><a href="../Structs/Diff.html">Diff</a></span><span class="o">.</span><span class="kt">Element</span><span class="p">,</span> <span class="nv">match</span><span class="p">:</span> <span class="kt"><a href="../Structs/Diff.html">Diff</a></span><span class="o">.</span><span class="kt">Element</span><span class="p">,</span> <span class="nv">other</span><span class="p">:</span> <span class="k">Self</span><span class="p">,</span> <span class="nv">isEqual</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:6Differ15EqualityCheckera">EqualityChecker</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/ExtendedDiff.html">ExtendedDiff</a></span><span class="o">.</span><span class="kt">Element</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sl6DifferSQ7ElementRpzrlE12extendedDiffyAA08ExtendedD0VxF"></a>
+                    <a name="//apple_ref/swift/Method/extendedDiff(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sl6DifferSQ7ElementRpzrlE12extendedDiffyAA08ExtendedD0VxF">extendedDiff(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Extensions/Collection.html#/s:Sl6DifferE12extendedDiff_7isEqualAA08ExtendedC0Vx_Sb7ElementQz_AGtXEtF">extendedDiff(_:isEqual:)</a></code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">extendedDiff</span><span class="p">(</span><span class="n">_</span> <span class="nv">other</span><span class="p">:</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/ExtendedDiff.html">ExtendedDiff</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sl6DifferSl7ElementRpzrlE10nestedDiff2to14isEqualSection0fgB0AA06NestedD0Vx_SbAC_ACtXESbAB_ABQZ_AJtXEtF"></a>
+                    <a name="//apple_ref/swift/Method/nestedDiff(to:isEqualSection:isEqualElement:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sl6DifferSl7ElementRpzrlE10nestedDiff2to14isEqualSection0fgB0AA06NestedD0Vx_SbAC_ACtXESbAB_ABQZ_AJtXEtF">nestedDiff(to:isEqualSection:isEqualElement:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a diff between the callee and <code>other</code> collection. It diffs elements two levels deep (therefore <q>nested</q>)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">nestedDiff</span><span class="p">(</span>
+    <span class="nv">to</span><span class="p">:</span> <span class="k">Self</span><span class="p">,</span>
+    <span class="nv">isEqualSection</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:6Differ15EqualityCheckera">EqualityChecker</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="nv">isEqualElement</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:6Differ28NestedElementEqualityCheckera">NestedElementEqualityChecker</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/NestedDiff.html">NestedDiff</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a collection to compare the calee to</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a <code><a href="../Structs/NestedDiff.html">NestedDiff</a></code> between the calee and <code>other</code> collection</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sl6DifferSl7ElementRpzSQAB_ABRPzrlE10nestedDiff2to14isEqualSectionAA06NestedD0Vx_SbAC_ACtXEtF"></a>
+                    <a name="//apple_ref/swift/Method/nestedDiff(to:isEqualSection:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sl6DifferSl7ElementRpzSQAB_ABRPzrlE10nestedDiff2to14isEqualSectionAA06NestedD0Vx_SbAC_ACtXEtF">nestedDiff(to:isEqualSection:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Extensions/Collection.html#/s:Sl6DifferSl7ElementRpzrlE10nestedDiff2to14isEqualSection0fgB0AA06NestedD0Vx_SbAC_ACtXESbAB_ABQZ_AJtXEtF">nestedDiff(to:isEqualSection:isEqualElement:)</a></code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">nestedDiff</span><span class="p">(</span>
+    <span class="nv">to</span><span class="p">:</span> <span class="k">Self</span><span class="p">,</span>
+    <span class="nv">isEqualSection</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:6Differ15EqualityCheckera">EqualityChecker</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/NestedDiff.html">NestedDiff</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sl6DifferSl7ElementRpzSQACRQrlE10nestedDiff2to07isEqualB0AA06NestedD0Vx_SbAB_ABSTQZ_AItXEtF"></a>
+                    <a name="//apple_ref/swift/Method/nestedDiff(to:isEqualElement:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sl6DifferSl7ElementRpzSQACRQrlE10nestedDiff2to07isEqualB0AA06NestedD0Vx_SbAB_ABSTQZ_AItXEtF">nestedDiff(to:isEqualElement:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Extensions/Collection.html#/s:Sl6DifferSl7ElementRpzrlE10nestedDiff2to14isEqualSection0fgB0AA06NestedD0Vx_SbAC_ACtXESbAB_ABQZ_AJtXEtF">nestedDiff(to:isEqualSection:isEqualElement:)</a></code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">nestedDiff</span><span class="p">(</span>
+    <span class="nv">to</span><span class="p">:</span> <span class="k">Self</span><span class="p">,</span>
+    <span class="nv">isEqualElement</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:6Differ28NestedElementEqualityCheckera">NestedElementEqualityChecker</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/NestedDiff.html">NestedDiff</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sl6DifferSl7ElementRpzSQACRQSQAB_ABSTRPzrlE10nestedDiff2toAA06NestedD0Vx_tF"></a>
+                    <a name="//apple_ref/swift/Method/nestedDiff(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sl6DifferSl7ElementRpzSQACRQSQAB_ABSTRPzrlE10nestedDiff2toAA06NestedD0Vx_tF">nestedDiff(to:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Extensions/Collection.html#/s:Sl6DifferSl7ElementRpzrlE10nestedDiff2to14isEqualSection0fgB0AA06NestedD0Vx_SbAC_ACtXESbAB_ABQZ_AJtXEtF">nestedDiff(to:isEqualSection:isEqualElement:)</a></code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">nestedDiff</span><span class="p">(</span><span class="nv">to</span><span class="p">:</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/NestedDiff.html">NestedDiff</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sl6DifferSl7ElementRpzrlE18nestedExtendedDiff2to14isEqualSection0ghB0AA06NesteddE0Vx_SbAC_ACtXESbAB_ABQZ_AJtXEtF"></a>
+                    <a name="//apple_ref/swift/Method/nestedExtendedDiff(to:isEqualSection:isEqualElement:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sl6DifferSl7ElementRpzrlE18nestedExtendedDiff2to14isEqualSection0ghB0AA06NesteddE0Vx_SbAC_ACtXESbAB_ABQZ_AJtXEtF">nestedExtendedDiff(to:isEqualSection:isEqualElement:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a diff between the callee and <code>other</code> collection. It diffs elements two levels deep (therefore <q>nested</q>)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">nestedExtendedDiff</span><span class="p">(</span>
+    <span class="nv">to</span><span class="p">:</span> <span class="k">Self</span><span class="p">,</span>
+    <span class="nv">isEqualSection</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:6Differ15EqualityCheckera">EqualityChecker</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span><span class="p">,</span>
+    <span class="nv">isEqualElement</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:6Differ28NestedElementEqualityCheckera">NestedElementEqualityChecker</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/NestedExtendedDiff.html">NestedExtendedDiff</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>other</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a collection to compare the calee to</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>a <code><a href="../Structs/NestedDiff.html">NestedDiff</a></code> between the calee and <code>other</code> collection</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sl6DifferSl7ElementRpzSQAB_ABRPzrlE18nestedExtendedDiff2to14isEqualSectionAA06NesteddE0Vx_SbAC_ACtXEtF"></a>
+                    <a name="//apple_ref/swift/Method/nestedExtendedDiff(to:isEqualSection:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sl6DifferSl7ElementRpzSQAB_ABRPzrlE18nestedExtendedDiff2to14isEqualSectionAA06NesteddE0Vx_SbAC_ACtXEtF">nestedExtendedDiff(to:isEqualSection:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Extensions/Collection.html#/s:Sl6DifferSl7ElementRpzrlE10nestedDiff2to14isEqualSection0fgB0AA06NestedD0Vx_SbAC_ACtXESbAB_ABQZ_AJtXEtF">nestedDiff(to:isEqualSection:isEqualElement:)</a></code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">nestedExtendedDiff</span><span class="p">(</span>
+    <span class="nv">to</span><span class="p">:</span> <span class="k">Self</span><span class="p">,</span>
+    <span class="nv">isEqualSection</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:6Differ15EqualityCheckera">EqualityChecker</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/NestedExtendedDiff.html">NestedExtendedDiff</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sl6DifferSl7ElementRpzSQACRQrlE18nestedExtendedDiff2to07isEqualB0AA06NesteddE0Vx_SbAB_ABSTQZ_AItXEtF"></a>
+                    <a name="//apple_ref/swift/Method/nestedExtendedDiff(to:isEqualElement:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sl6DifferSl7ElementRpzSQACRQrlE18nestedExtendedDiff2to07isEqualB0AA06NesteddE0Vx_SbAB_ABSTQZ_AItXEtF">nestedExtendedDiff(to:isEqualElement:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Extensions/Collection.html#/s:Sl6DifferSl7ElementRpzrlE10nestedDiff2to14isEqualSection0fgB0AA06NestedD0Vx_SbAC_ACtXESbAB_ABQZ_AJtXEtF">nestedDiff(to:isEqualSection:isEqualElement:)</a></code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">nestedExtendedDiff</span><span class="p">(</span>
+    <span class="nv">to</span><span class="p">:</span> <span class="k">Self</span><span class="p">,</span>
+    <span class="nv">isEqualElement</span><span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:6Differ28NestedElementEqualityCheckera">NestedElementEqualityChecker</a></span><span class="o">&lt;</span><span class="k">Self</span><span class="o">&gt;</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/NestedExtendedDiff.html">NestedExtendedDiff</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:Sl6DifferSl7ElementRpzSQACRQSQAB_ABSTRPzrlE18nestedExtendedDiff2toAA06NesteddE0Vx_tF"></a>
+                    <a name="//apple_ref/swift/Method/nestedExtendedDiff(to:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:Sl6DifferSl7ElementRpzSQACRQSQAB_ABSTRPzrlE18nestedExtendedDiff2toAA06NesteddE0Vx_tF">nestedExtendedDiff(to:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Extensions/Collection.html#/s:Sl6DifferSl7ElementRpzrlE10nestedDiff2to14isEqualSection0fgB0AA06NestedD0Vx_SbAC_ACtXESbAB_ABQZ_AJtXEtF">nestedDiff(to:isEqualSection:isEqualElement:)</a></code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">nestedExtendedDiff</span><span class="p">(</span><span class="nv">to</span><span class="p">:</span> <span class="k">Self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/NestedExtendedDiff.html">NestedExtendedDiff</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://tonyarnold.com" target="_blank" rel="external">Tony Arnold</a>. All rights reserved. (Last updated: 2018-09-06)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

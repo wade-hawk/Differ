@@ -1,0 +1,376 @@
+{
+  "warnings": [
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/BatchUpdate.swift",
+      "line": null,
+      "symbol": "BatchUpdate",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/BatchUpdate.swift",
+      "line": 3,
+      "symbol": "BatchUpdate",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/BatchUpdate.swift",
+      "line": 4,
+      "symbol": "BatchUpdate.MoveStep",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/BatchUpdate.swift",
+      "line": 5,
+      "symbol": "BatchUpdate.MoveStep.from",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/BatchUpdate.swift",
+      "line": 6,
+      "symbol": "BatchUpdate.MoveStep.to",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/BatchUpdate.swift",
+      "line": 9,
+      "symbol": "BatchUpdate.deletions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/BatchUpdate.swift",
+      "line": 10,
+      "symbol": "BatchUpdate.insertions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/BatchUpdate.swift",
+      "line": 11,
+      "symbol": "BatchUpdate.moves",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Diff+AppKit.swift",
+      "line": 5,
+      "symbol": "BatchUpdate.init(diff:indexPathTransform:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Diff+AppKit.swift",
+      "line": 83,
+      "symbol": "NSTableView.apply(_:deletionAnimation:insertionAnimation:indexPathTransform:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Diff+AppKit.swift",
+      "line": 137,
+      "symbol": "NSCollectionView.apply(_:completion:indexPathTransform:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Diff+AppKit.swift",
+      "line": 269,
+      "symbol": "NSCollectionView.apply(_:indexPathTransform:sectionTransform:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Diff.swift",
+      "line": null,
+      "symbol": "DiffProtocol",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Diff.swift",
+      "line": 1,
+      "symbol": "DiffProtocol",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Diff.swift",
+      "line": 3,
+      "symbol": "DiffProtocol.DiffElementType",
+      "symbol_kind": "source.lang.swift.decl.associatedtype",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Diff.swift",
+      "line": 5,
+      "symbol": "DiffProtocol.elements",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Diff.swift",
+      "line": 18,
+      "symbol": "Diff.Element.insert(at:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Diff.swift",
+      "line": 19,
+      "symbol": "Diff.Element.delete(at:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Diff.swift",
+      "line": 45,
+      "symbol": "Diff.Element.init(trace:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Diff.swift",
+      "line": 66,
+      "symbol": "Point",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Diff.swift",
+      "line": 67,
+      "symbol": "Point.x",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Diff.swift",
+      "line": 68,
+      "symbol": "Point.y",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Diff.swift",
+      "line": 73,
+      "symbol": "Trace.from",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Diff.swift",
+      "line": 74,
+      "symbol": "Trace.to",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Diff.swift",
+      "line": 75,
+      "symbol": "Trace.D",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Diff.swift",
+      "line": 116,
+      "symbol": "EqualityChecker",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Diff.swift",
+      "line": 338,
+      "symbol": "DiffProtocol.IndexType",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Diff.swift",
+      "line": 348,
+      "symbol": "DiffProtocol.subscript(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.subscript",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Diff.swift",
+      "line": 354,
+      "symbol": "Diff.init(traces:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/ExtendedDiff.swift",
+      "line": 13,
+      "symbol": "ExtendedDiff.Element.insert(at:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/ExtendedDiff.swift",
+      "line": 14,
+      "symbol": "ExtendedDiff.Element.delete(at:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/ExtendedDiff.swift",
+      "line": 15,
+      "symbol": "ExtendedDiff.Element.move(from:to:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/ExtendedDiff.swift",
+      "line": 136,
+      "symbol": "Collection.firstMatch(_:dirtyIndices:candidate:candidateIndex:other:isEqual:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/ExtendedDiff.swift",
+      "line": 155,
+      "symbol": "Collection.createMatch(_:match:other:isEqual:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/ExtendedPatch+Apply.swift",
+      "line": 3,
+      "symbol": "RangeReplaceableCollection.apply(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/ExtendedPatch.swift",
+      "line": 54,
+      "symbol": "ExtendedDiff.OrderedBefore",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/NestedDiff.swift",
+      "line": null,
+      "symbol": "NestedDiff",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/NestedDiff.swift",
+      "line": 1,
+      "symbol": "NestedDiff",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/NestedDiff.swift",
+      "line": 6,
+      "symbol": "NestedDiff.Element.deleteSection(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/NestedDiff.swift",
+      "line": 7,
+      "symbol": "NestedDiff.Element.insertSection(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/NestedDiff.swift",
+      "line": 8,
+      "symbol": "NestedDiff.Element.deleteElement(_:section:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/NestedDiff.swift",
+      "line": 9,
+      "symbol": "NestedDiff.Element.insertElement(_:section:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/NestedExtendedDiff.swift",
+      "line": null,
+      "symbol": "NestedExtendedDiff",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/NestedExtendedDiff.swift",
+      "line": 1,
+      "symbol": "NestedExtendedDiff",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/NestedExtendedDiff.swift",
+      "line": 6,
+      "symbol": "NestedExtendedDiff.Element.deleteSection(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/NestedExtendedDiff.swift",
+      "line": 7,
+      "symbol": "NestedExtendedDiff.Element.insertSection(_:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/NestedExtendedDiff.swift",
+      "line": 8,
+      "symbol": "NestedExtendedDiff.Element.moveSection(from:to:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/NestedExtendedDiff.swift",
+      "line": 9,
+      "symbol": "NestedExtendedDiff.Element.deleteElement(_:section:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/NestedExtendedDiff.swift",
+      "line": 10,
+      "symbol": "NestedExtendedDiff.Element.insertElement(_:section:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/NestedExtendedDiff.swift",
+      "line": 11,
+      "symbol": "NestedExtendedDiff.Element.moveElement(from:to:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/NestedExtendedDiff.swift",
+      "line": 35,
+      "symbol": "NestedElementEqualityChecker",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Patch+Apply.swift",
+      "line": 3,
+      "symbol": "RangeReplaceableCollection.apply(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ/Sources/Differ/Patch+Sort.swift",
+      "line": 20,
+      "symbol": "Diff.OrderedBefore",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Volumes/macOS High Sierra/Users/tonyarnold/Developer/Repositories/Differ"
+}
