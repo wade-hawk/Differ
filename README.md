@@ -174,7 +174,7 @@ All of the above being said, the algorithm used by Diff works best for collectio
 
 ## Requirements
 
-Differ requires Swift 4.1 / Xcode 9.3 or later to compile.
+Differ requires Swift 4.2 / Xcode 10 or later to compile.
 
 ## Installation
 
