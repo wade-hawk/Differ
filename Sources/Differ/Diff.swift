@@ -171,21 +171,17 @@ public extension Collection {
     }
 
     fileprivate func tracesForDeletions() -> [Trace] {
-        var traces = [Trace]()
-        for index in 0 ..< Int(count) {
-            let intIndex = Int(index)
-            traces.append(Trace(from: Point(x: Int(intIndex), y: 0), to: Point(x: Int(intIndex) + 1, y: 0), D: 0))
-        }
-        return traces
+        return (0 ..< count)
+            .map({
+                Trace(from: Point(x: $0, y: 0), to: Point(x: $0 + 1, y: 0), D: 0)
+            })
     }
 
     fileprivate func tracesForInsertions(to: Self) -> [Trace] {
-        var traces = [Trace]()
-        for index in 0 ..< Int(to.count) {
-            let intIndex = Int(index)
-            traces.append(Trace(from: Point(x: 0, y: Int(intIndex)), to: Point(x: 0, y: Int(intIndex) + 1), D: 0))
-        }
-        return traces
+        return (0 ..< to.count)
+                 .map({
+                   Trace(from: Point(x: 0, y: $0), to: Point(x: 0, y: $0 + 1), D: 0)
+               })
     }
 
     fileprivate func myersDiffTraces(
