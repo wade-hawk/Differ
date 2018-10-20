@@ -33,7 +33,7 @@ public extension Diff {
         to: T,
         sort: OrderedBefore
     ) -> [Patch<T.Element>] {
-        let shiftedPatch = patch(from: from, to: to)
+        let shiftedPatch = patch(to: to)
         return shiftedPatchElements(from: sortedPatchElements(
             from: shiftedPatch,
             sortBy: sort
