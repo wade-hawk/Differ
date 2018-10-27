@@ -14,26 +14,17 @@ public struct BatchUpdate {
         diff: ExtendedDiff,
         indexPathTransform: (IndexPath) -> IndexPath = { $0 }
         ) {
-        deletions = diff.compactMap { element -> IndexPath? in
+        (deletions, insertions, moves) = diff.reduce(([IndexPath](), [IndexPath](), [MoveStep]()), { (acc, element) in
+            var (deletions, insertions, moves) = acc
             switch element {
             case let .delete(at):
-                return indexPathTransform([0, at])
-            default: return nil
-            }
-        }
-        insertions = diff.compactMap { element -> IndexPath? in
-            switch element {
+                deletions.append(indexPathTransform([0, at]))
             case let .insert(at):
-                return indexPathTransform([0, at])
-            default: return nil
-            }
-        }
-        moves = diff.compactMap { element -> MoveStep? in
-            switch element {
+                insertions.append(indexPathTransform([0, at]))
             case let .move(from, to):
-                return MoveStep(from: indexPathTransform([0, from]), to: indexPathTransform([0, to]))
-            default: return nil
+                moves.append(MoveStep(from: indexPathTransform([0, from]), to: indexPathTransform([0, to])))
             }
-        }
+            return (deletions, insertions, moves)
+        })
     }
 }
