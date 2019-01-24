@@ -76,7 +76,7 @@ public extension NSCollectionView {
     ///   - newData:            Data which reflects the current state of `UICollectionView`
     ///   - indexPathTransform: Closure which transforms zero-based `IndexPath` to desired  `IndexPath`
     ///   - completion:         Closure to be executed when the animation completes
-    public func animateItemChanges<T: Collection>(
+    func animateItemChanges<T: Collection>(
         oldData: T,
         newData: T,
         indexPathTransform: @escaping (IndexPath) -> IndexPath = { $0 },
@@ -94,7 +94,7 @@ public extension NSCollectionView {
     ///   - isEqual:            A function comparing two elements of `T`
     ///   - indexPathTransform: Closure which transforms zero-based `IndexPath` to desired  `IndexPath`
     ///   - completion:         Closure to be executed when the animation completes
-    public func animateItemChanges<T: Collection>(
+    func animateItemChanges<T: Collection>(
         oldData: T,
         newData: T,
         isEqual: EqualityChecker<T>,
@@ -105,7 +105,7 @@ public extension NSCollectionView {
         apply(diff, completion: completion, indexPathTransform: indexPathTransform)
     }
 
-    public func apply(
+    func apply(
         _ diff: ExtendedDiff,
         completion: ((Bool) -> Swift.Void)? = nil,
         indexPathTransform: @escaping (IndexPath) -> IndexPath = { $0 }
@@ -127,7 +127,7 @@ public extension NSCollectionView {
     ///   - indexPathTransform: Closure which transforms zero-based `IndexPath` to desired  `IndexPath`
     ///   - sectionTransform:   Closure which transforms zero-based section(`Int`) into desired section(`Int`)
     ///   - completion:         Closure to be executed when the animation completes
-    public func animateItemAndSectionChanges<T: Collection>(
+    func animateItemAndSectionChanges<T: Collection>(
         oldData: T,
         newData: T,
         indexPathTransform: @escaping (IndexPath) -> IndexPath = { $0 },
@@ -154,7 +154,7 @@ public extension NSCollectionView {
     ///   - indexPathTransform: Closure which transforms zero-based `IndexPath` to desired  `IndexPath`
     ///   - sectionTransform:   Closure which transforms zero-based section(`Int`) into desired section(`Int`)
     ///   - completion:         Closure to be executed when the animation completes
-    public func animateItemAndSectionChanges<T: Collection>(
+    func animateItemAndSectionChanges<T: Collection>(
         oldData: T,
         newData: T,
         isEqualElement: NestedElementEqualityChecker<T>,
@@ -184,7 +184,7 @@ public extension NSCollectionView {
     ///   - indexPathTransform: Closure which transforms zero-based `IndexPath` to desired  `IndexPath`
     ///   - sectionTransform:   Closure which transforms zero-based section(`Int`) into desired section(`Int`)
     ///   - completion:         Closure to be executed when the animation completes
-    public func animateItemAndSectionChanges<T: Collection>(
+    func animateItemAndSectionChanges<T: Collection>(
         oldData: T,
         newData: T,
         isEqualSection: EqualityChecker<T>,
@@ -215,7 +215,7 @@ public extension NSCollectionView {
     ///   - indexPathTransform: Closure which transforms zero-based `IndexPath` to desired  `IndexPath`
     ///   - sectionTransform:   Closure which transforms zero-based section(`Int`) into desired section(`Int`)
     ///   - completion:         Closure to be executed when the animation completes
-    public func animateItemAndSectionChanges<T: Collection>(
+    func animateItemAndSectionChanges<T: Collection>(
         oldData: T,
         newData: T,
         isEqualSection: EqualityChecker<T>,
@@ -237,7 +237,7 @@ public extension NSCollectionView {
             )
     }
 
-    public func apply(
+    func apply(
         _ diff: NestedExtendedDiff,
         indexPathTransform: @escaping (IndexPath) -> IndexPath = { $0 },
         sectionTransform: @escaping (Int) -> Int = { $0 },
