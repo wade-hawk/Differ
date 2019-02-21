@@ -7,12 +7,15 @@ jobs:
         - stage: "Xcode"
           name: "Run tests on macOS"
           script: xcrun xcodebuild test -destination "platform=macOS" -project "Differ.xcodeproj" -scheme "Differ"
+          after_success: 'bash <(curl -s https://codecov.io/bash)'
         -
           name: "Run tests on iOS"
           script: xcrun xcodebuild test -destination "platform=iOS Simulator,OS=12.2,name=iPhone X" -project "Differ.xcodeproj" -scheme "Differ"
+          after_success: 'bash <(curl -s https://codecov.io/bash)'
         -
           name: "Run tests on tvOS"
           script: xcrun xcodebuild test -destination "platform=tvOS Simulator,OS=12.2,name=Apple TV 4K" -project "Differ.xcodeproj" -scheme "Differ"
+          after_success: 'bash <(curl -s https://codecov.io/bash)'
         -
           name: "Build for watchOS"
           script: xcrun xcodebuild build -destination "platform=watchOS Simulator,OS=5.2,name=Apple Watch Series 4 - 44mm" -project "Differ.xcodeproj" -scheme "Differ"
@@ -27,6 +30,3 @@ jobs:
         - stage: "CocoaPods"
           name: "Lint Podspec"
           script: pod lib lint
-
-after_success:
-    - 'bash <(curl -s https://codecov.io/bash)'
