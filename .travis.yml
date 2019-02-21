@@ -1,43 +1,32 @@
 os: osx
 osx_image: xcode10.2
 language: swift
-env:
-    global:
-        - LANG=en_US.UTF-8
-        - PROJECT="Differ.xcodeproj"
-        - SCHEME="Differ"
-        - IOS_SDK=iphonesimulator12.2
-        - OSX_SDK=macosx10.14
-        - TVOS_SDK=appletvsimulator12.2
-        - WATCHOS_SDK=watchsimulator5.2
-    matrix:
-        - >-
-            DESTINATION="arch=x86_64" SDK="$OSX_SDK" SCHEME="$SCHEME"
-            RUN_TESTS="YES" BUILD_EXAMPLE="NO" POD_LINT="NO"
-        - >-
-            DESTINATION="OS=12.2,name=iPhone X" SDK="$IOS_SDK" SCHEME="$SCHEME"
-            RUN_TESTS="YES" BUILD_EXAMPLE="YES" POD_LINT="YES"
-        - >-
-            DESTINATION="OS=12.2,name=Apple TV 4K" SDK="$TVOS_SDK"
-            SCHEME="$SCHEME" RUN_TESTS="NO" BUILD_EXAMPLE="NO" POD_LINT="NO"
-        - >-
-            DESTINATION="OS=5.2,name=Apple Watch Series 4 - 44mm" SDK="$WATCHOS_SDK"
-            SCHEME="$SCHEME" RUN_TESTS="NO" BUILD_EXAMPLE="NO" POD_LINT="NO"
-script:
-    - set -o pipefail
-    - 'if [ $POD_LINT == "YES" ]; then pod lib lint; fi'
-    - >-
-        if [ $BUILD_EXAMPLE == "YES" ]; then xcodebuild clean build -project
-        Examples/TableViewExample/TableViewExample.xcodeproj -scheme
-        TableViewExample -sdk "$SDK" -destination "$DESTINATION"; fi
-    - >-
-        if [ $RUN_TESTS == "YES" ]; then xcodebuild clean test -project
-        "$PROJECT" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION"
-        ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO; fi
-    - >-
-        if [ $RUN_TESTS != "YES" ]; then xcodebuild clean build -project
-        "$PROJECT" -scheme "$SCHEME" -sdk "$SDK" -destination "$DESTINATION"
-        ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO ; fi
-    - swift test
+
+jobs:
+    include:
+        - stage: "Xcode"
+          name: "Run tests on macOS"
+          script: xcrun xcodebuild test -destination "platform=macOS" -project "Differ.xcodeproj" -scheme "Differ"
+        -
+          name: "Run tests on iOS"
+          script: xcrun xcodebuild test -destination "platform=iOS Simulator,OS=12.2,name=iPhone X" -project "Differ.xcodeproj" -scheme "Differ"
+        -
+          name: "Run tests on tvOS"
+          script: xcrun xcodebuild test -destination "platform=tvOS Simulator,OS=12.2,name=Apple TV 4K" -project "Differ.xcodeproj" -scheme "Differ"
+        -
+          name: "Run tests on watchOS"
+          script: xcrun xcodebuild test -destination "platform=watchOS Simulator,OS=5.2,name=Apple Watch Series 4 - 44mm" -project "Differ.xcodeproj" -scheme "Differ"
+        -
+          name: "Build TableViewExample"
+          script: xcrun xcodebuild clean build -destination "platform=iOS Simulator,OS=12.2,name=iPhone X" -project "Examples/TableViewExample/TableViewExample.xcodeproj" -scheme "TableViewExample"
+
+        - stage: "Swift Package Manager"
+          name: "Run Tests"
+          script: swift test
+
+        - stage: "CocoaPods"
+          name: "Lint Podspec"
+          script: pod lib lint
+
 after_success:
     - 'bash <(curl -s https://codecov.io/bash)'
