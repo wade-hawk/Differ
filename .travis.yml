@@ -14,8 +14,8 @@ jobs:
           name: "Run tests on tvOS"
           script: xcrun xcodebuild test -destination "platform=tvOS Simulator,OS=12.2,name=Apple TV 4K" -project "Differ.xcodeproj" -scheme "Differ"
         -
-          name: "Run tests on watchOS"
-          script: xcrun xcodebuild test -destination "platform=watchOS Simulator,OS=5.2,name=Apple Watch Series 4 - 44mm" -project "Differ.xcodeproj" -scheme "Differ"
+          name: "Build for watchOS"
+          script: xcrun xcodebuild build -destination "platform=watchOS Simulator,OS=5.2,name=Apple Watch Series 4 - 44mm" -project "Differ.xcodeproj" -scheme "Differ"
         -
           name: "Build TableViewExample"
           script: xcrun xcodebuild clean build -destination "platform=iOS Simulator,OS=12.2,name=iPhone X" -project "Examples/TableViewExample/TableViewExample.xcodeproj" -scheme "TableViewExample"
