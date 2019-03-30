@@ -1,4 +1,4 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.0
 import PackageDescription
 
 let package = Package(
@@ -9,6 +9,5 @@ let package = Package(
     targets: [
         .target(name: "Differ"),
         .testTarget(name: "DifferTests", dependencies: ["Differ"]),
-    ],
-    swiftLanguageVersions: [4]
+    ]
 )
