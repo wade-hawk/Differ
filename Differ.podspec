@@ -20,7 +20,7 @@ Also included are utilities for easily applying diffs and patches to `UICollecti
   s.source_files = "Sources/Differ"
 
   s.platforms = { :ios => "8.0", :osx => "10.11", :tvos => "9.0", :watchos => "3.0" }
-  s.swift_version = "5.0"
+  s.swift_version = '5.0'
 
   s.ios.exclude_files = [
     "Sources/Differ/Diff+AppKit.swift"
