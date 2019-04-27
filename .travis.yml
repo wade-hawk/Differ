@@ -29,7 +29,7 @@ jobs:
 
         - stage: "CocoaPods"
           name: "Lint Podspec"
-          install: 
+          install:
             - brew update
-            - gem update cocoapods
+            - gem install cocoapods --pre
           script: pod lib lint
