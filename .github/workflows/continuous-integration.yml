@@ -46,3 +46,12 @@ jobs:
     - uses: actions/checkout@v1
     - name: swift test
       run: swift test
+      
+  cocoapods-verify:
+    name: CocoaPods
+    runs-on: macOS-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Lint CocoaPods specification
+      run: pod lib lint
