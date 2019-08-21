@@ -9,15 +9,15 @@ jobs:
     strategy:
       matrix:
         destination: [
-          "platform=macOS", 
-          "platform=iOS Simulator,OS=12.2,name=iPhone X", 
-          "platform=tvOS Simulator,OS=12.2,name=Apple TV 4K",
-          "platform=watchOS Simulator,OS=5.2,name=Apple Watch Series 4 - 44mm"
+          "platform=macOS",
+          "platform=iOS Simulator,name=iPhone Xs", 
+          "platform=tvOS Simulator,name=Apple TV",
+          "platform=watchOS Simulator,name=Apple Watch Series 4 - 44mm"
         ]
 
     steps:
     - uses: actions/checkout@v1
-    - name: Run tests using Xcode with destination ${{ matrix.destination }}
+    - name: xcrun xcodebuild test
       run: |
         xcrun xcodebuild test -destination "${{ matrix.destination }}" -project "Differ.xcodeproj" -scheme "Differ"
         bash <(curl -s https://codecov.io/bash)
