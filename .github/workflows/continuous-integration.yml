@@ -49,9 +49,11 @@ jobs:
       
   swiftlint:
     name: SwiftLint
-    uses: norio-nomura/action-swiftlint@1.0.0
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+    - uses: actions/checkout@v1
+    - uses: norio-nomura/action-swiftlint@1.0.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   cocoapods-verify:
     name: CocoaPods
