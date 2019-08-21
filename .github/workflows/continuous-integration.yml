@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   test-xcode:
-    name: Xcode Tests
+    name: Xcode
     runs-on: macOS-latest
     strategy:
       matrix:
@@ -17,13 +17,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: ${{ matrix.destination }}
+    - name: xcrun xcodebuild test
       run: |
         xcrun xcodebuild test -destination "${{ matrix.destination }}" -project "Differ.xcodeproj" -scheme "Differ"
         bash <(curl -s https://codecov.io/bash)
 
   test-swift-package-manager:
-    name: Swift Package Manager Tests
+    name: Swift Package Manager
     runs-on: macOS-latest
     
     steps:
