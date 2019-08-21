@@ -3,8 +3,8 @@ name: Continuous Integration
 on: [push]
 
 jobs:
-  test-xcode:
-    name: Xcode
+  xcode-build:
+    name: Xcode Build
     runs-on: macOS-latest
     strategy:
       matrix:
@@ -17,12 +17,28 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+    - name: xcrun xcodebuild build
+      run: xcrun xcodebuild build -destination "${{ matrix.destination }}" -project "Differ.xcodeproj" -scheme "Differ"
+
+  xcode-test:
+    name: Xcode Test
+    runs-on: macOS-latest
+    strategy:
+      matrix:
+        destination: [
+          "platform=macOS",
+          "platform=iOS Simulator,name=iPhone Xs", 
+          "platform=tvOS Simulator,name=Apple TV"
+        ]
+
+    steps:
+    - uses: actions/checkout@v1
     - name: xcrun xcodebuild test
       run: |
         xcrun xcodebuild test -destination "${{ matrix.destination }}" -project "Differ.xcodeproj" -scheme "Differ"
         bash <(curl -s https://codecov.io/bash)
 
-  test-swift-package-manager:
+  swift-package-manager-test:
     name: Swift Package Manager
     runs-on: macOS-latest
     
