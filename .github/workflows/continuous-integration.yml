@@ -8,6 +8,10 @@ jobs:
     runs-on: macOS-latest
     strategy:
       matrix:
+        developer_dir: [
+          "/Applications/Xcode_10.3.app",
+          "/Applications/Xcode_11.app"
+        ]
         destination: [
           "platform=macOS",
           "platform=iOS Simulator,name=iPhone Xs", 
@@ -18,6 +22,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: xcrun xcodebuild build
+      env:
+        DEVELOPER_DIR: "${{ matrix.developer_dir }}/Contents/Developer"
       run: xcrun xcodebuild build -destination "${{ matrix.destination }}" -project "Differ.xcodeproj" -scheme "Differ"
 
   xcode-test:
@@ -34,6 +40,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: xcrun xcodebuild test
+      env:
+        DEVELOPER_DIR: "${{ matrix.developer_dir }}/Contents/Developer"
       run: |
         xcrun xcodebuild test -destination "${{ matrix.destination }}" -project "Differ.xcodeproj" -scheme "Differ"
         bash <(curl -s https://codecov.io/bash)
@@ -45,6 +53,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: swift test
+      env:
+        DEVELOPER_DIR: "${{ matrix.developer_dir }}/Contents/Developer"
       run: swift test
       
   cocoapods-verify:
@@ -54,4 +64,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Lint CocoaPods specification
+      env:
+        DEVELOPER_DIR: "${{ matrix.developer_dir }}/Contents/Developer"
       run: pod lib lint
