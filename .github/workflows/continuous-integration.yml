@@ -31,6 +31,10 @@ jobs:
     runs-on: macOS-latest
     strategy:
       matrix:
+        developer_dir: [
+          "/Applications/Xcode_10.3.app",
+          "/Applications/Xcode_11.app"
+        ]
         destination: [
           "platform=macOS",
           "platform=iOS Simulator,name=iPhone Xs", 
@@ -49,7 +53,13 @@ jobs:
   swift-package-manager-test:
     name: Swift Package Manager
     runs-on: macOS-latest
-    
+    strategy:
+      matrix:
+        developer_dir: [
+          "/Applications/Xcode_10.3.app",
+          "/Applications/Xcode_11.app"
+        ]
+
     steps:
     - uses: actions/checkout@v1
     - name: swift test
@@ -65,5 +75,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: Lint CocoaPods specification
       env:
-        DEVELOPER_DIR: "${{ matrix.developer_dir }}/Contents/Developer"
+        DEVELOPER_DIR: "/Applications/Xcode_11.app/Contents/Developer"
       run: pod lib lint
