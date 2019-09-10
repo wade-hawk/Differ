@@ -53,7 +53,7 @@ public class GraphViewController: UIViewController {
     }
 
     var traces: [Trace] {
-        return Array(diffStrings.0.characters).diffTraces(to: Array(diffStrings.1.characters))
+        return Array(diffStrings.0).diffTraces(to: Array(diffStrings.1))
     }
 
     func display(range: Range<Int>? = nil) {

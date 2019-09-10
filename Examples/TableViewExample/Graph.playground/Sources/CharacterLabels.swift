@@ -14,13 +14,11 @@ public extension String {
     }
 
     func characterLabels(withFrames frames: [CGRect]) -> [UILabel] {
-        let characters = self.characters
-
-        guard characters.count == frames.count else {
+        guard count == frames.count else {
             return []
         }
 
-        let labels = characters.map { $0.label() }
+        let labels = map { $0.label() }
         let sizes = labels.map { $0.frame.size }
         let frames = inset(rects: frames, to: sizes)
         zip(labels, frames).forEach { label, frame in label.frame = frame }
