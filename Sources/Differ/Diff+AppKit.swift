@@ -1,4 +1,5 @@
 #if canImport(AppKit) && !targetEnvironment(macCatalyst)
+/*
 import AppKit
 
 extension NSTableView {
@@ -255,5 +256,5 @@ public extension NSCollectionView {
         }, completionHandler: completion)
     }
 }
-
+*/
 #endif
